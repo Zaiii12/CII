@@ -18,31 +18,31 @@
             <form method="post" id="registerForm" onsubmit="handleRegisterSubmit(event)">
                 <h1>REGISTER</h1>
                 <div class="underline"></div>
-                <div class='input-box'>     <!-- INPUT FIELD -->
+                <div class='input-box'>    
                     <input type='text' name="fname" placeholder='First Name' value =""  />
-                    <i class="fas fa-user icon"></i>
+            
                 </div>
                 
-                <div class='input-box'> <!-- INPUT FIELD -->
+                <div class='input-box'> 
                     <input type='text' name="lname" placeholder='Last Name' value= "" />
-                    <i class="fas fa-user icon"></i>
+                    
                 </div>
 
 
-                <div class='input-box'><!-- INPUT FIELD -->
+                <div class='input-box'>
                     <input type='email' name="email" placeholder='Email' value="" />
-                    <i class="fas fa-envelope icon"></i>
+                   
                 </div>
                 
-                <div class='input-box'><!-- INPUT FIELD -->
+                <div class='input-box'>
                     <input type='password' name="pass" placeholder='Password' value="" />
-                    <i class="fas fa-lock icon"></i>
+                   
                 </div>
 
                 <div class="remember-forgot">
                     <label><input type="checkbox" />I agree to the terms & conditions</label>
                 </div>
-                <!-- REGISTER BUTTON -->
+                
                 <button type='submit' id='signup'>Register</button>
 
                 <div class="login">
