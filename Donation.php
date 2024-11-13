@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII Project</title>
-    <link rel="stylesheet" href="C1.css">
+    <link rel="stylesheet" href="CC1.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
     <nav class="nav">
         <div>
             <ul>
-                <li><a href="Main.html">Home</a></li>
+                <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
             </ul>
@@ -23,10 +23,10 @@
     <h2 class = "donate" >Please Donate to our Cause!</h2>
 
     <div class = "boxes">
-        <form action="method" method="post" enctype="multipart/form-data">
-            <input type="file" name="photo" accept="image/*">
-            <button type="submit">Donate Food</button>
-            </form>
+        <!-- <form action="method" method="post" enctype="multipart/form-data">
+                <input type="file" name="photo" accept="image/*">
+                <button type="submit">Donate Food</button>
+            </form> -->
         <div class = "box">Food Pic <!-- Buttons to be added -->
             <a href ="FoodST.php">Donate Food!</a>
         </div>

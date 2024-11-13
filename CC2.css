@@ -91,6 +91,7 @@ body {
     transform: translateY(3px);
     opacity: 1;
 }
+
 /*=================================== Body ===================================*/
 /*=================================== Container ===================================*/
 .boxleft {
@@ -114,5 +115,58 @@ body {
     font-family: Aptos;
 }
 
+.forms {
+    display: flex;
+    float: center;
+    justify-content: center;
+}
 
+.f1 {
+    width: 500px;
+    height: 600px;
+    border: 4px solid black;
+    margin: 35px;
+}
+
+.f2 {
+    width: 500px;
+    height: 600px;
+    border: 4px solid black;
+    margin: 35px;
+}
+
+.f1 h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+.f2 h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+.Forms {
+    justify-content: space-between;
+    display: flex;
+}
+
+
+.DonoForm {
+    width: 20%; 
+    padding: 10px;
+    margin-left: 200px;
+}
+
+.FoodForm {
+    width: 28%;
+    padding: 10px;
+    margin-right: 200px;
+
+}
+
+.submit {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
 /*=================================== Container ===================================*/
