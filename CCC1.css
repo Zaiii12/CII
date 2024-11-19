@@ -84,6 +84,7 @@ body {
     display: flex;
 }
 
+
 .btn a {
     display: flex;
     padding: 0.3em 1.25em;
@@ -129,6 +130,17 @@ body {
     margin-left:100px;
     margin-right:100px;
 }
+
+.para {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    margin: 150px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
 
 /*=================================== Headers ===================================*/
 
@@ -177,5 +189,6 @@ body {
     transform: translateY(3px);
     opacity: 1;
 }
+
 
 /*=================================== Containers ===================================*/

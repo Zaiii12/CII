@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 
 <?php 
-// Connect Database to this. -N
-// !!THIS IS FOR THE FOOD STATUS PAGE!!
-
+require 'db_connect.php';
 ?>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="Stylesheet" href="C2.css">
+<link rel="Stylesheet" href="CCC2.css">
 <h1 class="h1">Community Involvement Initiative</h1>
 </head>
 <body>

@@ -57,6 +57,7 @@ body {
     font-family: Aptos;
     font-style: normal;
     margin: 0px;
+
 }
 
 .btn {
@@ -91,6 +92,7 @@ body {
     transform: translateY(3px);
     opacity: 1;
 }
+
 /*=================================== Body ===================================*/
 /*=================================== Container ===================================*/
 .boxleft {
@@ -115,4 +117,47 @@ body {
 }
 
 
+.f1 {
+    width: 500px;
+    height: 600px;
+    border: 4px solid black;
+    margin: 35px;
+}
+
+.f2 {
+    width: 500px;
+    height: 600px;
+    border: 4px solid black;
+    margin: 35px;
+}
+
+.f1 h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+.f2 h3 {
+    text-align: center;
+    justify-content: center;
+}
+
+.Forms {
+    float:center;
+}
+
+
+.DonoForm {
+    justify-content: center;
+    display: flex;
+}
+.FoodForm {
+    justify-content: center;
+    display: flex;
+}
+
+.submit {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+}
 /*=================================== Container ===================================*/

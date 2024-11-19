@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 
 <?php 
-// Connect Database to this. -N
-// !!THIS IS FOR THE CLOTHES DONATION PAGE!!
+require 'db_connect.php';
 
 ?>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="Stylesheet" href="C2.css">
+<link rel="Stylesheet" href="CCC2.css">
 <h1 class="h1">Community Involvement Initiative</h1>
 </head>
 <body>
@@ -24,8 +23,31 @@
     </nav>
     <h2 class = "dt" >Please fill out these forms</h2>
 
-    <div class ="forms">
-        <form></form>
+    <div class="Forms">
+
+    <div class ="FoodForm">
+        <form action="dbp_clothes.php" method="POST">
+            <fieldset>
+                <legend>Clothes Donation Information</legend>
+                
+                <label for="apparel">Apparel Type: </label>
+                <input type="text" id="apparel" name="apparel" required>
+                <br><br>
+                
+                <label for="size">Size: </label>
+                <input type="text" id="size" name="size" required>
+                <br><br>
+
+                <label for="gender">Gender: </label>
+                <input type="text" id="gender" name="gender" required>
+                <br><br>
+
+                <div class = "submit">
+                <button type="submit">Submit Donation</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
     </div>
 </body>
 </html>
