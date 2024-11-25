@@ -27,13 +27,13 @@
                 <ul class="navbar-nav">
         
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="Main.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Donate</a>
+                        <a class="nav-link" href="Donation.php">Donate</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="Aboutus.html">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Login.php">Log In</a>
