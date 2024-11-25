@@ -11,7 +11,10 @@
     <!--h1 class="h1">Community Involvement Initiative</h1-->
     <?php
     session_start();  
-
+    if (!isset($_SESSION['donator_id'])) {
+        header("Location:  Nlogin.php");
+        exit();
+    }
     ?>
 
 

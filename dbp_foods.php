@@ -3,7 +3,7 @@ session_start();
 
 
 if (!isset($_SESSION['donator_id'])) {
-    header("Location: login.php");
+    header("Location: NLogin.php");
     exit();
 }
 
