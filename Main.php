@@ -9,7 +9,7 @@
 
 <body>
     <?php
-
+    session_start();  
     $site_title = "Community Involvement Initiative";
     $hero_title = "Make a Difference Today";
     $hero_text = "Join our community initiative to help those in need through various donation programs";
