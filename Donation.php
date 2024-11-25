@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII Project</title>
-    <link rel="stylesheet" href="CCC1.css">
+    <link rel="stylesheet" href="CC1.css">
 </head>
 
 <body>
     <!--h1 class="h1">Community Involvement Initiative</h1-->
+    <?php
+    session_start();  
+
+    ?>
+
 
     <nav class="nav">
         <div>
@@ -16,6 +21,7 @@
                 <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>
     </nav>

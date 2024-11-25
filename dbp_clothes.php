@@ -1,17 +1,26 @@
 <?php
 
-require 'db_connect.php';
+include 'Process/db_connect.php';
+
+session_start();  
+if (!isset($_SESSION['donator_id'])) {
+    header("Location: login.php");
+    exit();
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $donator_id = $_SESSION['donator_id'];
 
     $apparel = $conn->real_escape_string($_POST['apparel']);
     $size = $conn->real_escape_string($_POST['size']);
     $gender = $conn->real_escape_string($_POST['gender']);
 
-    $sql = "INSERT INTO clothes (apparel, size, gender) VALUES ('$apparel', '$size', '$gender')";
+    $sql = "INSERT INTO clothes (apparel, size, gender, donator_id) 
+    VALUES ('$apparel', '$size', '$gender','$donator_id')";
 
     if ($conn->query($sql) === TRUE) {
-        header("Location: Main.php");
+        header("Location: Thankyou.php");
         exit();
         
     } else {

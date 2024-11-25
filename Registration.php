@@ -1,10 +1,15 @@
 <!DOCTYPE html>
+
+<?php
+include 'Process/db_connect.php';
+require 'dbp_donators.php';
+?>
 <html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII Project</title>
-    <link rel="stylesheet" href="CCC2.css">
+    <link rel="stylesheet" href="CC2.css">
 </head>
 
 <body>
@@ -23,7 +28,7 @@
 
 <div class="Forms">
 <div class ="DonoForm">
-    <form action:="dbp_donators.php" method="post">
+    <form action:="dbp_login.php" method="post">
         <fieldset>
             <legend>Donator Information</legend>
             
@@ -36,8 +41,20 @@
             <br><br>
             
             <label for="d_phone">Phone Number:</label>
-            <input type="tel" id="d_phone" name="d_phone" required pattern="[0-9]{10}">
+            <input type="text" id="d_phone" name="d_phone" required>
             <br><br>
+
+            <label for="username">Username: </label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+
+            <label for="password">Password: </label>
+            <input type="text" id="password" name="password" required>
+            <br><br>
+
+            <div class = "submit">
+                <button type="submit">Log in</button>
+                </div>
         </fieldset>
     </form>
 </div>
