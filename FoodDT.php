@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 
 <?php 
-<<<<<<< HEAD
-include 'Process/db_connect.php';
-session_start();  
-
-=======
 // Connect Database to this. -N
 // !!THIS IS FOR THE FOOD DONATION PAGE!!
 $servername = "localhost";
@@ -18,7 +13,6 @@ $conn = new mysqli($servername, $username,$password,$database);
 if ($conn->connect_error){
     die("Connection failed: "  . $conn-> connect_error);
 }
->>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
 
 ?>
 
@@ -35,7 +29,6 @@ if ($conn->connect_error){
                 <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
-                <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>
     </nav>
@@ -43,35 +36,6 @@ if ($conn->connect_error){
 
 
 <div class="Forms">
-<<<<<<< HEAD
-    <div class ="FoodForm">
-        <form action="dbp_foods.php" method="post">
-            <fieldset>
-                <legend>Food Donation Information</legend>
-                
-                <label for="food_type">Food Type: </label>
-                <input type="text" id="food_type" name="food_type" required>
-                <br><br>
-                
-                <label for="amount_of_serving">Amount of serving: </label>
-                <input type="text" id="amount_of_serving" name="amount_of_serving" required>
-                <br><br>
-                
-                <label for="date_donated">Donation Date: </label>
-                <input type="date" id="date_donated" name="date_donated" required>
-                <br><br>
-
-                <div class = "submit">
-                <button type="submit">Submit Donation</button>
-                </div>
-            </fieldset>
-        </form>
-
-    </div>
-    </div>
-
-
-=======
     <div class ="DonoForm">
         <form action:="ProcessFood.php" method="post">
             <fieldset>
@@ -116,7 +80,6 @@ if ($conn->connect_error){
 
     <div class = "submit">
     <button type="submit">Submit Donation</button>
->>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
     </div>
 </body>
 </html>

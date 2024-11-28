@@ -57,7 +57,6 @@ body {
     font-family: Aptos;
     font-style: normal;
     margin: 0px;
-
 }
 
 .btn {
@@ -102,10 +101,11 @@ body {
 }
 
 .box {
+    justify-content: center;
+    text-align: center;
     display: block;
     width: 500px;
     height: 600px;
-    float: left;
 }
 
 .desc {
@@ -146,24 +146,12 @@ body {
 }
 
 .Forms {
-<<<<<<< HEAD
-    float:center;
-=======
     justify-content: space-between;
     display: flex;
->>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
 }
 
 
 .DonoForm {
-<<<<<<< HEAD
-    justify-content: center;
-    display: flex;
-}
-.FoodForm {
-    justify-content: center;
-    display: flex;
-=======
     width: 20%; 
     padding: 10px;
     margin-left: 200px;
@@ -174,7 +162,6 @@ body {
     padding: 10px;
     margin-right: 200px;
 
->>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
 }
 
 .submit {
