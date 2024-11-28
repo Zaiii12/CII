@@ -30,9 +30,6 @@
                         <a class="nav-link" href="Main.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Donation.php">Donate</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Aboutus.html">About</a>
                     </li>
                     <li class="nav-item">

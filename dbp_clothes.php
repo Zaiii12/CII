@@ -3,10 +3,7 @@
 include 'Process/db_connect.php';
 
 session_start();  
-if (!isset($_SESSION['donator_id'])) {
-    header("Location: Nlogin.php");
-    exit();
-}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 

@@ -2,10 +2,7 @@
 session_start();  
 
 
-if (!isset($_SESSION['donator_id'])) {
-    header("Location: NLogin.php");
-    exit();
-}
+
 
 include 'Process/db_connect.php';
 
