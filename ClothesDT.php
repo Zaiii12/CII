@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 
 <?php 
-include 'Process/db_connect.php';
-session_start();  
-
-
-
+// Connect Database to this. -N
+// !!THIS IS FOR THE CLOTHES DONATION PAGE!!
 
 ?>
 <head>
@@ -28,31 +25,8 @@ session_start();
     </nav>
     <h2 class = "dt" >Please fill out these forms</h2>
 
-    <div class="Forms">
-
-    <div class ="FoodForm">
-        <form action="dbp_clothes.php" method="POST">
-            <fieldset>
-                <legend>Clothes Donation Information</legend>
-                
-                <label for="apparel">Apparel Type: </label>
-                <input type="text" id="apparel" name="apparel" required>
-                <br><br>
-                
-                <label for="size">Size: </label>
-                <input type="text" id="size" name="size" required>
-                <br><br>
-
-                <label for="gender">Gender: </label>
-                <input type="text" id="gender" name="gender" required>
-                <br><br>
-
-                <div class = "submit">
-                <button type="submit">Submit Donation</button>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+    <div class ="forms">
+        <form></form>
     </div>
 </body>
 </html>

@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 
 <?php 
+<<<<<<< HEAD
 include 'Process/db_connect.php';
 session_start();  
 
+=======
+// Connect Database to this. -N
+// !!THIS IS FOR THE FOOD STATUS PAGE!!
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "cii";
+
+$conn = new mysqli($servername, $username,$password,$database);
+
+if ($conn->connect_error){
+    die("Connection failed: "  . $conn-> connect_error);
+}
+>>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
 
 ?>
 
