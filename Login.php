@@ -6,13 +6,28 @@
     <title>Login - CII Project</title>
     <link rel="stylesheet" href="C1.css">
 </head>
-<html>
 <body>
-<div class="login-container">
-    <h2>Login</h2>
-    <form action="login.php" method="POST"> 
-        <label for="username">Username</label>
-        <input type="text" id="username" name="username" required>
+    <nav class="nav">
+        <div>
+            <ul>
+                <li><a href="Main.php">Home</a></li>
+                <li><a href="Donation.php">Donate</a></li>
+                <li><a href="Aboutus.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="welcome">
+        <h1>Welcome to the Community Involvement Initiative</h1>
+    </div>
+
+    <div class="Login">
+        <fieldset>
+            <legend>Log In</legend>
+            <form action="dbp_login.php" method="POST">
+                
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" required>
+                <br><br>
 
                 <label for="password">Password: </label>
                 <input type="password" id="password" name="password" required>
