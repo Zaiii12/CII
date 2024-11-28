@@ -9,7 +9,7 @@ require 'dbp_donators.php';
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CII Project</title>
-    <link rel="stylesheet" href="CC2.css">
+    <link rel="stylesheet" href="C2.css">
 </head>
 
 <body>
