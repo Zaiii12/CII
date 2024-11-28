@@ -1,11 +1,10 @@
 <?php
 session_start();  
-
-
-
-
 include 'Process/db_connect.php';
-
+if (!isset($_SESSION['donator_id'])) {
+    header("Location: Nlogin.php");
+    exit();
+}
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $donator_id = $_SESSION['donator_id'];

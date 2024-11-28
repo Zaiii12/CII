@@ -4,7 +4,7 @@ include 'Process/db_connect.php';
 session_start();  
 
 if (!isset($_SESSION['donator_id'])) {
-    header("Location: login.php");
+    header("Location: Nlogin.php");
     exit();
 }
 
