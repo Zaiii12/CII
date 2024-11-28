@@ -49,9 +49,6 @@ session_start();
             font-size: 4rem;
             color: #0C6478;
         }
-        .card-title {
-            color: #423736S;
-        }
         .btn-primary {
             background-color: #0C6478;
             border-color: #0C6478;
