@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 
 <?php 
-// Connect Database to this. -N
-// !!THIS IS FOR THE FOOD STATUS PAGE!!
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "cii";
+include 'Process/db_connect.php';
+session_start();  
 
-$conn = new mysqli($servername, $username,$password,$database);
-
-if ($conn->connect_error){
-    die("Connection failed: "  . $conn-> connect_error);
-}
 
 ?>
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="Stylesheet" href="CC2.css">
+<link rel="Stylesheet" href="C2.css">
 <h1 class="h1">Community Involvement Initiative</h1>
 </head>
 <body>
@@ -29,13 +21,16 @@ if ($conn->connect_error){
                 <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>
     </nav>
     <h2>Donate to the Community.</h2>
 
     <div class ="boxleft">
-        <div class ="box">Put Stats here</div>
+        <div class ="box">
+            <?php include 'dbs_foods.php'; ?>
+        </div>
     </div>
 
     <div class ="desc">

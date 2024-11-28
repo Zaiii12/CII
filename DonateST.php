@@ -1,24 +1,14 @@
 <!DOCTYPE html>
 <html>
 <?php 
-// Connect Database to this. -N
-// !!THIS IS FOR THE DONATION GLOBAL STATUS PAGE!!
-$servername = "localhost";
-$username = "root";
-$password = "";
-$database = "cii";
-
-$conn = new mysqli($servername, $username,$password,$database);
-
-if ($conn->connect_error){
-    die("Connection failed: "  . $conn-> connect_error);
-}
+include 'Process/db_connect.php';
+session_start();  
 
 ?>
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="Stylesheet" href="CC2.css">
+<link rel="Stylesheet" href="C2.css">
 <h1 class="h1">Community Involvement Initiative</h1>
 </head>
 <body>
