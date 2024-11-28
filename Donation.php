@@ -9,14 +9,6 @@
 
 <body>
     <!--h1 class="h1">Community Involvement Initiative</h1-->
-    <?php
-    session_start();  
-    if (!isset($_SESSION['donator_id'])) {
-        header("Location:  Nlogin.php");
-        exit();
-    }
-    ?>
-
 
     <nav class="nav">
         <div>
@@ -24,7 +16,6 @@
                 <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
                 <li><a href="Aboutus.html">About Us</a></li>
-                <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>
     </nav>

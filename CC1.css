@@ -37,35 +37,12 @@ body {
     margin: 0px;
 }
 
-.Login {
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    float: center;
-
-}
-
-.thanks {
-    font-size: 90px;
-    font-family: aptos;
-    justify-content: center;
-    text-align: center ;
-}
-
 /*=================================== Body ===================================*/
 /*=================================== Headers ===================================*/
 
 .h1 {
     text-align: center;
     font-family: Aptos;
-    
-}
-
-.h2 {
-    text-align: center;
-    font-family: Aptos;
-
-    
 }
 
 .about_us {
@@ -161,10 +138,6 @@ body {
     margin: 150px;
     font-size: 30px;
     text-align: center;
-<<<<<<< HEAD
-
-=======
->>>>>>> e172d46ffe7aa3b2fcbdabd1a6685ff8ebde5d58
 }
 
 
