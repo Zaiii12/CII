@@ -96,8 +96,6 @@
             --text-color: #423736;
         }
         body {
-              margin: 0;
-              padding: 0;
               background-image: url("https://cdn.discordapp.com/attachments/1302931578762035253/1313161317842030644/BG3.jpg?ex=674f2047&is=674dcec7&hm=481abbaec1f965b95633d668e70f4460c6526f3e489821bb6616025cc373bc0d&");
               background-repeat: no-repeat;
               background-size: cover;
