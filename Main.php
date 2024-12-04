@@ -28,13 +28,13 @@
                 <ul class="navbar-nav">
         
                     <li class="nav-item">
-                        <a class="nav-link" href="home.php">Home</a>
+                        <a class="nav-link" href="Main.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Log In</a>
+                        <a class="nav-link" href="Login.php">Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="Aboutus.php">About Us</a>
                     </li>
                 </ul>
             </div>
@@ -46,7 +46,7 @@
         <div class="container">
             <h1 class="#"><?php echo $hero_title; ?></h1>
             <p class="#"><?php echo $hero_text; ?></p>
-            <a href="required.php" class="cta-button"><?php echo $cta_text; ?></a>
+            <a href="Donation.php" class="cta-button"><?php echo $cta_text; ?></a>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

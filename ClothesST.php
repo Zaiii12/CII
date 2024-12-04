@@ -19,7 +19,7 @@ session_start();
             <ul>
                 <li><a href="Main.php">Home</a></li>
                 <li><a href="Donation.php">Donate</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
+                <li><a href="Aboutus.php">About Us</a></li>
                 <li><a href="logout.php">Log out</a></li>
             </ul>
         </div>

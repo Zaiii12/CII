@@ -1,37 +1,103 @@
+<?php
+session_start();
+
+
+if (isset($_SESSION['user_id'])) {
+    header("Location: home.php");
+    exit();
+}
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST['action'])) {
+        if ($_POST['action'] == 'signup') {
+            header("Location: signup.php");
+            exit();
+        } elseif ($_POST['action'] == 'no_thanks') {
+            header("Location: Main.php");
+            exit();
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CII Project</title>
-    <link rel="stylesheet" href="C1.css">
+    <title>Login Required</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9d5b7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 8;
+        }
+        .container {
+            background-color: #bdd1c5;
+            padding: 2rem;
+            border-radius: 80px;
+            box-shadow: 0 7px 50px;
+            text-align: center;
+        }
+        h1 {
+            color: #2e4156;
+            margin-bottom: 0rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+        .btn-primary {
+            background-color: #d6aa9f;
+            color: white;
+        }
+        .btn-secondary {
+            background-color: #c0c8ca;
+            color: #2e4156;
+        }
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
 </head>
-
 <body>
-
-    <?php
-    session_start();  
-
-
-    ?>
-    <nav class="nav">
-        <div>
-            <ul>
-                <li><a href="Main.php">Home</a></li>
-                <li><a href="Donation.php">Donate</a></li>
-                <li><a href="Aboutus.html">About Us</a></li>
-
-            </ul>
-            <div class = "welcome">
-                <h1>You are not logged in, Please Log in.</h1>
-            </div>
-        </div>
-    </nav>
-    <p class="para">You can log in by the buttons below, If you don't have an account otherwise, please register as a donator.</p>
-    <div class = "btn">
-        <a href="Login.php">Login</a>
-        <a href="Registration.php">Register</a>
+    <div class="container">
+        <h1>You must sign up before you can continue.</h1>
+        <button id="loginBtn" class= "btn btn-primary">Register</button>
     </div>
-    
+
+    <script>
+        document.getElementById('loginBtn').addEventListener('click', function() {
+            Swal.fire({
+                title: 'Login Required',
+                text: 'You need to register first. Would you like to sign up?',
+                icon: 'info',
+                showCancelButton: true,
+                confirmButtonText: 'Sign Up',
+                cancelButtonText: 'No, thanks',
+                confirmButtonColor: '#d6aa9f',
+                cancelButtonColor: '#c0c8ca',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                   
+                    window.location.href = 'Registration.php';
+                } else {
+              
+                    window.location.href = 'Main.php';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

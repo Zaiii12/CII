@@ -121,7 +121,7 @@
 <body>
     <?php
         $site_title = "Community Involvement Initiative";
-       
+        session_start(); 
     ?>
 
     <!-- Navigation -->
@@ -134,13 +134,13 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.php">Home</a>
+                        <a class="nav-link" href="Main.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Login.php">Log In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" href="Aboutus.php">About Us</a>
                     </li>
                 </ul>
             </div>

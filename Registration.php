@@ -110,15 +110,15 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="#"><?php echo $site_title; ?></a>
+            <a class="navbar-brand" href="Main.php"><?php echo $site_title; ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Log In</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Main.php">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.php">Log In</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Aboutus.html">About Us</a></li>
                 </ul>
             </div>
         </div>
@@ -128,7 +128,7 @@
 
     <!-- Forms Section -->
     <section class="forms">
-        <form action="dbp_login.php" method="post">
+        <form action="dbp_donators.php" method="post">
             <fieldset>
                 <legend>Donator Information</legend>
                 <label for="d_firstname">Donator First Name:</label>

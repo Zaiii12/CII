@@ -36,13 +36,13 @@
                 <input type="file" name="photo" accept="image/*">
                 <button type="submit">Donate Food</button>
             </form> -->
-        <div class = "box">Food Pic <!-- Buttons to be added -->
+        <div class = "box">Food Pic 
             <a href ="FoodST.php">Donate Food!</a>
         </div>
-        <div class = "box">Money Pic <!-- Buttons to be added -->
+        <div class = "box">Money Pic 
             <a href ="MoneyST.php">Donate Money!</a>
         </div>
-        <div class = "box">Clothes Pic <!-- Buttons to be added -->
+        <div class = "box">Clothes Pic
             <a href ="ClothesST.php">Donate Clothes!</a>
         </div>
     </div>
