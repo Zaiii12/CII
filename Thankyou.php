@@ -20,7 +20,7 @@ session_start();
                         <i class="bi bi-check-circle-fill success-icon mb-3"></i>
                         <h1 class="card-title mb-3">Thank You!</h1>
                         <p class="card-text mb-4">
-                             Your contribution has been successfully processed and will make a real difference in our community.
+                             Your contribution has been successfully processed and will be approved by the admins in the following hours once the confirmation has been confirmed.
                         </p>
                         <a href="Main.php" class="btn btn-primary btn-lg d-block mb-3">Return Home</a>
                         <a href="Donation.php" class="btn btn-outline-secondary btn-lg d-block">Submit Another Donation</a>
