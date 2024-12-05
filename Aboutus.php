@@ -6,6 +6,17 @@
     <title>About Us - Community Involvement Initiative</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
+        body {
+              margin: 0;
+              padding: 0;
+              background-image: url("https://cdn.discordapp.com/attachments/1302931578762035253/1313161317842030644/BG3.jpg?ex=674f2047&is=674dcec7&hm=481abbaec1f965b95633d668e70f4460c6526f3e489821bb6616025cc373bc0d&");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 0%;
+              background-attachment: fixed;
+              height: 100vh;
+              backdrop-filter:blur(2px);
+        }
         * {
             margin: 0;
             padding: 0;
@@ -72,20 +83,23 @@
 
         .team-image {
             width: 100%;
-            height: 200px;
+            height: 30px; 
             background-color: #2d3748;
             display: flex;
             align-items: center;
             justify-content: center;
+            overflow: hidden; 
         }
 
-        .team-image i {
-            font-size: 4rem;
-            color: #fff;
-        }
-
-        .team-info {
-            padding: 1.5rem;
+        .team-info img {
+            width: 100%; 
+            height: auto;
+            object-fit: cover; 
+            border-top-left-radius: 10px; 
+            border-top-right-radius: 10px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
         }
 
         .team-info h2 {
@@ -177,6 +191,7 @@
 
 <body>
     <?php
+
     $site_title = "Community Involvement Initiative";
     $hero_title = "Build a Better Future Now";
     $hero_text = "Join our community initiative to help those in need through various donation programs";
@@ -186,7 +201,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="Main.php"><?php echo $site_title; ?></a>
+            <a class="navbar-brand" href="#"><?php echo $site_title; ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -199,6 +214,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Login.php">Log In</a>
                     </li>
+
                 </ul>
             </div>
         </div>
@@ -246,7 +262,8 @@
                     
                 </div>
                 <div class="team-info">
-                    <h2>Kurt Victorino</h2>
+                <img src="../pics/kurtpic.jpg">
+                    <h2>Kurt Steven Victorino</h2>
                     <h>Executive Director</h>
                     <p>Leading our initiatives with over 15 years of experience in community 
                         development and nonprofit management.</p>
@@ -254,9 +271,10 @@
             </div>
             <div class="team-card">
                 <div class="team-image">
-                    
+                    x
                 </div>
                 <div class="team-info">
+                <img src="../pics/kyla_pic.png">
                     <h2>Kyla Tomoc</h2>
                     <h>Operations Manager</h>
                     <p>Ensuring smooth execution of our programs and maintaining strong relationships with 
@@ -268,6 +286,7 @@
                     
                 </div>
                 <div class="team-info">
+                <img src="../pics/nolepic.png">
                     <h2>Jan Nole Matres</h2>
                     <h>Community Outreach Coordinator</h>
                     <p>Building bridges between our initiative and the communities we serve through 
@@ -294,6 +313,7 @@
             <div class="copyright">
                 © 2024 Community Involvement Initiative. All rights reserved.
             </div>
+
         </div>
     </footer>
 </body>
