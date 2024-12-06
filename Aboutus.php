@@ -9,7 +9,7 @@
         body {
               margin: 0;
               padding: 0;
-              background-image: url("https://cdn.discordapp.com/attachments/1302931578762035253/1313161317842030644/BG3.jpg?ex=674f2047&is=674dcec7&hm=481abbaec1f965b95633d668e70f4460c6526f3e489821bb6616025cc373bc0d&");
+              background-image: url("Imgs/BG3.jpg");
               background-repeat: no-repeat;
               background-size: cover;
               background-position: 0%;
@@ -262,7 +262,7 @@
                     
                 </div>
                 <div class="team-info">
-                <img src="../pics/kurtpic.jpg">
+                <img src="Imgs/kurtpic.jpg">
                     <h2>Kurt Steven Victorino</h2>
                     <h>Executive Director</h>
                     <p>Leading our initiatives with over 15 years of experience in community 
@@ -274,7 +274,7 @@
                     x
                 </div>
                 <div class="team-info">
-                <img src="../pics/kyla_pic.png">
+                <img src="Imgs/kyla_pic.png">
                     <h2>Kyla Tomoc</h2>
                     <h>Operations Manager</h>
                     <p>Ensuring smooth execution of our programs and maintaining strong relationships with 
@@ -286,7 +286,7 @@
                     
                 </div>
                 <div class="team-info">
-                <img src="../pics/nolepic.png">
+                <img src="Imgs/nolepic.png">
                     <h2>Jan Nole Matres</h2>
                     <h>Community Outreach Coordinator</h>
                     <p>Building bridges between our initiative and the communities we serve through 
