@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Involvement Initiative</title>
+    <title>CII</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" href="">
 </head>
 
@@ -113,7 +113,7 @@
         body {
               margin: 0;
               padding: 0;
-              background-image: url("https://cdn.discordapp.com/attachments/1302931578762035253/1313161317842030644/BG3.jpg?ex=674f2047&is=674dcec7&hm=481abbaec1f965b95633d668e70f4460c6526f3e489821bb6616025cc373bc0d&");
+              background-image: url("Imgs/BG3.jpg");
               background-repeat: no-repeat;
               background-size: cover;
               background-position: 0%;
@@ -228,7 +228,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="Main.php"><?php echo $site_title; ?></a>
+            <a class="navbar-brand" href="#"><?php echo $site_title; ?></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -237,6 +237,7 @@
                     <li class="nav-item"><a class="nav-link" href="Main.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="Login.php">Log In</a></li>
                     <li class="nav-item"><a class="nav-link" href="Aboutus.php">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Recognition wall.php">Recognition Wall</a></li>
                 </ul>
             </div>
         </div>

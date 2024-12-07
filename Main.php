@@ -9,6 +9,7 @@
 
 <body>
     <?php
+    session_start();
 
     $site_title = "Community Involvement Initiative";
     $hero_title = "Build a Better Future Now";
@@ -30,13 +31,13 @@
                         <a class="nav-link" href="Home.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Login.php">Log In</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="Aboutus.php">About Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Recognition wall.php">Recognition Wall</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Log out</a>
                     </li>
                 </ul>
             </div>

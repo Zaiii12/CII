@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['donator_id'] = $user['donator_id'];  
 
 
-            header("Location: Main.php");
+            header("Location: Donation.php");
             exit();
 
         } else {

@@ -6,6 +6,17 @@
     <title>Community Involvement Initiative</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+              margin: 0;
+              padding: 0;
+              background-image: url("https://i0.wp.com/hbculifestyle.com/wp-content/uploads/2012/07/Why-Volunteering-is-Great-for-Teens.jpg?fit=456,304&ssl=1");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 0%;
+              background-attachment: fixed;
+              backdrop-filter:blur(2px);
+        }
+
         :root {
             --primary-color: #D6AA9F;
             --secondary-color: #F4E2D1;
@@ -117,6 +128,7 @@
             color: #E9D5B7;
         }
     </style>
+    </style>
 </head>
 <body>
     <?php
@@ -137,7 +149,8 @@
                         <a class="nav-link" href="Main.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Login.php">Log In</a>
+                        <a class="nav-link" href="Registration.php">Register
+                        </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Aboutus.php">About Us</a>

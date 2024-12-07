@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && isset($_P
     $action = $_POST['action'];
 
     if ($action == 'approve') {
-        // Insert into food table (no need to insert food_id manually)
+
         $approve_sql = "INSERT INTO food (food_type, amount_of_serving, date_donated, donator_id)
                         SELECT food_type, amount_of_serving, date_donated, donator_id
                         FROM p_food WHERE donator_id = $donation_id AND status = 'Pending'";
 
         if ($conn->query($approve_sql) === TRUE) {
-            // After insertion into 'food', just update the status in 'p_food' to 'Approved'
+    
             $update_sql = "UPDATE p_food SET status = 'Approved' WHERE donator_id = $donation_id";
             if ($conn->query($update_sql) === FALSE) {
                 echo "Error updating status in p_food: " . $conn->error;
@@ -30,19 +30,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && isset($_P
             echo "Error inserting into food table: " . $conn->error;
         }
     } elseif ($action == 'reject') {
-        // If rejected, just update the status to 'Rejected'
         $reject_sql = "UPDATE p_food SET status = 'Rejected' WHERE donator_id = $donation_id";
         if ($conn->query($reject_sql) === FALSE) {
             echo "Error rejecting donation: " . $conn->error;
         }
     }
 
-    // Redirect after action is completed
+
     header("Location: Adminsuccess.php");
     exit();
 }
 
-// Query to retrieve all pending donations from p_food
+
 $sql = "SELECT * FROM p_food WHERE status = 'Pending'";
 $result = $conn->query($sql);
 ?>

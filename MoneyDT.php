@@ -2,7 +2,7 @@
 
 <?php 
 include 'Process/db_connect.php';
-session_start();  
+
 ?>
 <head>
 <meta charset="UTF-8">

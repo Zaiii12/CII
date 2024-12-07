@@ -31,9 +31,9 @@
         }
 
         .container {
-            max-width: 100%;
-            margin: 0 ;
-            padding: 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2%rem;
         }
 
         .footer {
@@ -141,16 +141,9 @@
         }
 
         .footer {
-        background-color: #2d3748;
-        color: #fff;
-        padding: 1rem 0;
-        width: 100%; 
-        position: relative;
-        left: 0; 
-        right: 0; 
-        box-sizing: border-box;
-    }
-
+            background-color: #2d3748;
+            color: #fff;
+        }
 
         .footer-content {
             display: flex;
@@ -225,6 +218,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Aboutus.php">About Us</a>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="Recognition wall.php">Recognition Wall</a></li>
+
                 </ul>
             </div>
         </div>

@@ -15,13 +15,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && isset($_P
     $action = $_POST['action'];
 
     if ($action == 'approve') {
-        // Insert into the 'money' table from 'p_money', do not insert the primary key (money_id)
+
         $approve_sql = "INSERT INTO money (money_amount, currency, date_donated, donator_id)
                         SELECT money_amount, currency, date_donated, donator_id
                         FROM p_money WHERE donator_id = $donation_id AND status = 'Pending'";
 
         if ($conn->query($approve_sql) === TRUE) {
-            // No need to update money_id in p_money, just update status
+
             $update_sql = "UPDATE p_money SET status = 'Approved' WHERE donator_id = $donation_id";
             if ($conn->query($update_sql) === FALSE) {
                 echo "Error updating p_money status: " . $conn->error;
@@ -30,19 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['action']) && isset($_P
             echo "Error: " . $conn->error;
         }
     } elseif ($action == 'reject') {
-        // If rejecting, just update the status without inserting
+
         $reject_sql = "UPDATE p_money SET status = 'Rejected' WHERE donator_id = $donation_id";
         if ($conn->query($reject_sql) === FALSE) {
             echo "Error rejecting donation: " . $conn->error;
         }
     }
 
-    // Redirect back to the admin page after handling the action
+
     header("Location: Adminsuccess.php");
     exit();
 }
 
-// Query to get all pending donations
+
 $sql = "SELECT * FROM p_money WHERE status = 'Pending'";
 $result = $conn->query($sql);
 ?>

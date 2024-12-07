@@ -2,20 +2,17 @@
 
 <?php 
 include 'Process/db_connect.php';
-session_start();  
-$db = new Database(); 
-$conn = $db->conn; 
+
 ?>
 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="Stylesheet" href="CC2.css">
-<h1 class="h1">Community Involvement Initiative</h1>
 </head>
 <body>
 
-    <nav class="nav">
+<nav class="nav">
         <div>
             <ul>
                 <li><a href="Main.php">Home</a></li>
