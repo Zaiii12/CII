@@ -3,9 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Community Involvement Initiative</title>
+    <title>CII</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        body {
+              margin: 0;
+              padding: 0;
+              background-image: url("https://i0.wp.com/hbculifestyle.com/wp-content/uploads/2012/07/Why-Volunteering-is-Great-for-Teens.jpg?fit=456,304&ssl=1");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 0%;
+              background-attachment: fixed;
+              backdrop-filter:blur(2px);
+        }
+
         :root {
             --primary-color: #D6AA9F;
             --secondary-color: #F4E2D1;
@@ -164,7 +175,8 @@
                 <input type="password" id="password" name="password" required>
                 <br><br>
                 <div class="submit">
-                    <button type="submit">Log In</button>
+
+                    <button type="button" onclick="window.location.href='Donation.php'">Log in</button>
                 </div>
             </form>
         </fieldset>
