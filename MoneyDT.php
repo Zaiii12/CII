@@ -36,7 +36,7 @@ include 'Process/db_connect.php';
                     <label for="currency">Currency: </label>
                     <select id="currency" name="currency" required>
                     <option value="">Select Currency</option>
-                    <option value="AUD">PHP - Philippine Peso</option>
+                    <option value="PHP">PHP - Philippine Peso</option>
                     <option value="USD">USD - United States Dollar</option>
                     <option value="EUR">EUR - Euro</option>
                     <option value="GBP">GBP - British Pound</option>
